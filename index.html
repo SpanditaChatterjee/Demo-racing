@@ -8,29 +8,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
     <script src="p5.play.js"></script>
     
-<!--Database code starts here: The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
+   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-database.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
-<script>
   // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyDWruNu2MpLPCU6tzxcRm79hKqT5IVBzB8",
-    authDomain: "multiplayer-racing-e2773.firebaseapp.com",
-    databaseURL: "https://multiplayer-racing-e2773-default-rtdb.firebaseio.com",
-    projectId: "multiplayer-racing-e2773",
-    storageBucket: "multiplayer-racing-e2773.appspot.com",
-    messagingSenderId: "695142558940",
-    appId: "1:695142558940:web:68ef57282cb65bed8c1819"
+  const firebaseConfig = {
+    apiKey: "AIzaSyD7oYP9TURPDbU0-0baS7WpgUltP3MDogw",
+    authDomain: "car-racing-game-441e7.firebaseapp.com",
+    databaseURL: "https://car-racing-game-441e7-default-rtdb.firebaseio.com",
+    projectId: "car-racing-game-441e7",
+    storageBucket: "car-racing-game-441e7.appspot.com",
+    messagingSenderId: "817552242581",
+    appId: "1:817552242581:web:48704fb5656529d68a689c"
   };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
 
-<!--database code ends here-->    
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>   
     
     
     <script src="js/Player.js"></script>
